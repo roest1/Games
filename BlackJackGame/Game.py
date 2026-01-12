@@ -91,7 +91,7 @@ class Game:
             print(f"Dealer's Hand Value: {self.dealer.get_hand_value()}")
         else:
             print("Dealer's Hand Value: ?")
-            print(f"Dealer's Hand Value: {self.dealer.get_hand_value()}")
+            # print(f"Dealer's Hand Value: {self.dealer.get_hand_value()}")
 
         # Display dealer's cash and pot
         print("Dealer's Cash: ∞")
@@ -123,8 +123,7 @@ class Game:
                     return False
             else:
                 print("\033[H\033[J")  # Clear the screen
-                self.display_state(show_dealer_hand=True)
-
+                self.display_state(show_dealer_first_card=True)
                 return True
             
     def dealer_turn(self):
